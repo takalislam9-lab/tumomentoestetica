@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios — Tu Momento · Móstoles</title>
+<meta name="description" content="Servicios de Tu Momento en Móstoles.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="header" class="scrolled">
+  <a href="index.html" class="logo" aria-label="Tu Momento, inicio"><span class="logo-mark">T</span><span class="logo-text"><span class="script">Tu Momento</span><small>belleza y bienestar · Móstoles</small></span></a>
+  <nav id="nav" aria-label="Navegación principal"><ul><li><a href="index.html#inicio">Inicio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="index.html#galeria">Galería</a></li><li><a href="index.html#opiniones">Opiniones</a></li><li><a href="index.html#contacto">Contacto</a></li></ul></nav><button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+</header>
+
+<div class="page-hero">
+  <span class="eyebrow">Nuestro catálogo</span>
+  <h1>Servicios</h1>
+  <p>Organizados por categoría. Toca una tarjeta para ver los servicios y pedir precio o cita.</p>
+</div>
+
+<div class="tabs">
+  <button class="tab-btn active" data-tab="rostro">Faciales</button>
+  <button class="tab-btn" data-tab="cuerpo">Cuerpo</button>
+  <button class="tab-btn" data-tab="manos">Manos, pies y más</button>
+  
+</div>
+
+<div class="tab-panel active" id="rostro">
+  <div class="tab-intro"><span class="script">Rostro</span><h2>Tratamientos faciales</h2><p>Tu piel limpia, luminosa y cuidada.</p></div>
+  <div class="cat-grid single">
+    <div class="cat-card" onclick="openModal('limpieza')"><img src="stock_01.jpg" alt="Limpieza facial" loading="lazy"><div class="cat-card-text"><h3>Limpieza facial</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="cuerpo">
+  <div class="tab-intro"><span class="script">Cuerpo</span><h2>Masajes y corporales</h2><p>Para soltar tensión y sentirte como nueva.</p></div>
+  <div class="cat-grid">
+    <div class="cat-card" onclick="openModal('masajes')"><img src="stock_02.jpg" alt="Masajes" loading="lazy"><div class="cat-card-text"><h3>Masajes</h3><span>Ver servicios</span></div></div>
+    <div class="cat-card" onclick="openModal('corporal')"><img src="stock_03.jpg" alt="Corporales" loading="lazy"><div class="cat-card-text"><h3>Corporales</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="manos">
+  <div class="tab-intro"><span class="script">Cuidado</span><h2>Manos, pies y más</h2><p>Los detalles también cuentan.</p></div>
+  <div class="cat-grid">
+    <div class="cat-card" onclick="openModal('manos-pies')"><img src="maps_08.jpg" alt="Manicura y pedicura" loading="lazy"><div class="cat-card-text"><h3>Manicura y pedicura</h3><span>Ver servicios</span></div></div>
+    <div class="cat-card" onclick="openModal('otros')"><img src="maps_03.jpg" alt="Depilación y nutrición" loading="lazy"><div class="cat-card-text"><h3>Depilación y nutrición</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+
+<p class="services-note">¿Quieres saber precios o tienes dudas? Escríbenos por WhatsApp al <a href="https://wa.me/34692829615" target="_blank" rel="noopener" style="color:var(--red)">692 82 96 15</a> y te asesoramos sin compromiso.</p>
+
+<div class="modal-overlay" id="modal-limpieza"><div class="modal">
+  <button class="modal-close" onclick="closeModal('limpieza')" aria-label="Cerrar">×</button>
+  <h3>Limpieza facial</h3><p class="modal-sub">Oxigenante</p>
+  <div class="svc-row"><div><div class="svc-name">Limpieza facial oxigenante</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Tratamientos faciales</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34692829615?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20limpieza%20facial" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-masajes"><div class="modal">
+  <button class="modal-close" onclick="closeModal('masajes')" aria-label="Cerrar">×</button>
+  <h3>Masajes</h3><p class="modal-sub">Relájate</p>
+  <div class="svc-row"><div><div class="svc-name">Masaje relajante</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Masaje en cabina para dos</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34692829615?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20masajes" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-corporal"><div class="modal">
+  <button class="modal-close" onclick="closeModal('corporal')" aria-label="Cerrar">×</button>
+  <h3>Corporales</h3><p class="modal-sub">Tratamientos</p>
+  <div class="svc-row"><div><div class="svc-name">Detox corporal</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Tratamientos con aparatología</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34692829615?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20corporales" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-manos-pies"><div class="modal">
+  <button class="modal-close" onclick="closeModal('manos-pies')" aria-label="Cerrar">×</button>
+  <h3>Manicura y pedicura</h3><p class="modal-sub">Con diseños</p>
+  <div class="svc-row"><div><div class="svc-name">Manicura</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Pedicura</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34692829615?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20manicura%20y%20pedicura" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-otros"><div class="modal">
+  <button class="modal-close" onclick="closeModal('otros')" aria-label="Cerrar">×</button>
+  <h3>Depilación y nutrición</h3><p class="modal-sub">Pregúntanos</p>
+  <div class="svc-row"><div><div class="svc-name">Depilación</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Nutrición</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34692829615?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20depilaci%C3%B3n%20y%20nutrici%C3%B3n" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+
+<footer>
+  <div class="footer-bottom" style="margin-top:0">
+    <span>Propuesta de diseño para Tu Momento - demo, no es el sitio web oficial del negocio.</span>
+    <span><a href="aviso-legal.html">Aviso Legal</a> &middot; <a href="politica-privacidad.html">Privacidad</a> &middot; <a href="politica-cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<div id="cookie-banner" class="cookie-banner"><p>Esta web utiliza cookies de terceros (Google Maps) para ofrecerte la mejor experiencia. Puedes aceptar su uso o rechazarlas. <a href="politica-cookies.html">Más información</a></p><div class="cookie-actions"><button onclick="setCookieChoice('rejected')" class="ck-reject">Rechazar</button><button onclick="setCookieChoice('accepted')" class="ck-accept">Aceptar</button></div></div>
+<div class="social-fabs"><a class="wa-fab" href="https://wa.me/34692829615?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20me%20gustar%C3%ADa%20pedir%20cita%20en%20Tu%20Momento" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c2.6 1 2.6.7 3.1.6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.6-.3ZM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8Zm8.4-18.3A11.8 11.8 0 0 0 1.8 17.7L.2 23.8l6.3-1.6a11.8 11.8 0 0 0 5.6 1.4A11.8 11.8 0 0 0 20.4 3.5Z"/></svg></a></div>
+<script src="main.js"></script>
+</body>
+</html>
