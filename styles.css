@@ -214,6 +214,28 @@ footer a:hover{color:var(--lila)}
 .legal ul{padding-left:22px}
 .legal a{color:var(--malva);text-decoration:underline}
 
+/* PÁGINAS DE TRATAMIENTOS (faciales / corporales) */
+.page-hero{position:relative;isolation:isolate;min-height:68vh;display:grid;place-items:center;text-align:center;padding:150px 7% 100px;overflow:hidden}
+.page-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.page-hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(61,47,66,.55),rgba(61,47,66,.45))}
+.page-hero .eyebrow{color:#efe6ef}
+.page-hero h1{color:#fff;font-size:clamp(2.2rem,6vw,4.4rem);letter-spacing:.06em;margin:16px 0}
+.page-hero p{color:#f4eef4;max-width:620px;margin:0 auto}
+.treats{padding:100px 7%}
+.treat-grid{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.treat{background:var(--paper);border-radius:4px;padding:44px 40px 38px;border-top:3px solid var(--lila);display:flex;flex-direction:column}
+.treat .num{font:600 .9rem/1 var(--f-t);color:var(--lila);letter-spacing:.2em}
+.treat h2{font-size:clamp(1.3rem,2.2vw,1.65rem);margin:14px 0 12px;letter-spacing:.04em}
+.treat .sub{display:block;font-size:.7rem;margin-bottom:22px;color:var(--pizarra)}
+.treat p{line-height:1.85;margin-bottom:14px;font-size:.93rem}
+.treat a{align-self:flex-start;margin-top:auto;padding-top:10px;font:600 .64rem/1 var(--f-b);letter-spacing:.22em;text-transform:uppercase;color:var(--malva);border-bottom:1px solid var(--lila);padding-bottom:5px}
+.band{height:46vh;min-height:260px;background:var(--img) center/cover no-repeat}
+.treats-more{text-align:center;margin-top:54px}
+.btn-ghost-dark{border:1px solid var(--malva);color:var(--malva)}
+.btn-ghost-dark:hover{background:var(--malva);color:#fff}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.svc a + a{margin-top:12px}
+
 /* APARICIÓN AL HACER SCROLL */
 .rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
 .rv.in{opacity:1;transform:none}
@@ -241,6 +263,9 @@ footer a:hover{color:var(--lila)}
   .welcome figure{aspect-ratio:3/2}
   .cookie-banner{padding-bottom:76px}
   .cookie-actions{margin-right:0}
+  .treats{padding:70px 6%}
+  .treat-grid{grid-template-columns:1fr;gap:22px}
+  .treat{padding:34px 24px 30px}
 }
 @media(max-width:520px){
   .svc-grid{grid-template-columns:1fr}
