@@ -3,130 +3,228 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tu Momento — Belleza y bienestar en Móstoles</title>
-<meta name="description" content="Tu Momento, espacio integrativo de belleza y bienestar en C. Barcelona 37, Móstoles. Masajes, faciales, tratamientos corporales, depilación, manicura y pedicura. 4,9★ con 445 reseñas en Google.">
-<meta name="theme-color" content="#2b2130">
+<title>Tu Momento · Well Aging, Remodelación Corporal y Bienestar en Móstoles</title>
+<meta name="description" content="Tu Momento, en C. Barcelona 37, Móstoles: especialistas en Well Aging, Remodelación Corporal y Bienestar Real. Faciales, corporales, masajes, láser y Ayurveda con la metodología KAI Essence. 4,9★ con 445 reseñas en Google.">
+<meta name="theme-color" content="#5d4a5c">
 <meta property="og:title" content="Tu Momento · Móstoles">
-<meta property="og:image" content="maps_01.jpg">
-
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta property="og:description" content="Especialistas en Well Aging, Remodelación Corporal y Bienestar Real.">
+<meta property="og:image" content="tm-lavanda.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header id="header">
-  <a href="index.html" class="logo" aria-label="Tu Momento, inicio"><span class="logo-mark">T</span><span class="logo-text"><span class="script">Tu Momento</span><small>belleza y bienestar · Móstoles</small></span></a>
-  <nav id="nav" aria-label="Navegación principal"><ul><li><a href="index.html#inicio">Inicio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="index.html#galeria">Galería</a></li><li><a href="index.html#opiniones">Opiniones</a></li><li><a href="index.html#contacto">Contacto</a></li></ul></nav><button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+  <a href="#inicio" class="logo" aria-label="Tu Momento, inicio"><span class="logo-mark">T</span><span class="logo-text"><span class="script">Tu Momento</span><small>Well Aging · Móstoles</small></span></a>
+  <nav id="nav" aria-label="Navegación principal"><ul>
+    <li><a href="#bienvenida">Nosotras</a></li>
+    <li><a href="#kai">KAI Essence</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#opiniones">Opiniones</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul></nav><button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
 </header>
 
+<!-- 1. PORTADA: vídeo de lavanda en movimiento -->
 <section class="hero" id="inicio">
-  <div class="hero-text">
-    <span class="eyebrow">Belleza y bienestar · Móstoles</span>
-    <h1>Un rato <em>solo para ti.</em></h1>
-    <p>Masajes, faciales, tratamientos corporales, depilación, manicura y pedicura en la calle Barcelona de Móstoles. Un espacio tranquilo donde dejas el estrés en la puerta, literalmente.</p>
+  <img class="poster" src="lavanda.jpg" alt="" aria-hidden="true">
+  <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="lavanda.jpg" aria-hidden="true"><source src="lavanda.mp4" type="video/mp4"></video>
+  <div class="hero-in">
+    <h1>Tu Momento</h1>
+    <p class="tag">Especialistas en Well Aging, Remodelación Corporal y Bienestar Real</p>
     <div class="hero-ctas">
-      <a href="servicios.html" class="btn-outline">Descubre los servicios</a>
-      <a href="https://wa.me/34692829615?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20me%20gustar%C3%ADa%20pedir%20cita%20en%20Tu%20Momento" class="btn-solid" target="_blank" rel="noopener">Pide tu cita →</a>
+      <a href="https://wa.me/34692829615?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20me%20gustar%C3%ADa%20pedir%20una%20valoraci%C3%B3n%20en%20Tu%20Momento" class="btn btn-solid" target="_blank" rel="noopener">Pide tu valoración</a>
+      <a href="#kai" class="btn btn-ghost">Descubre KAI Essence</a>
     </div>
     <a class="hero-rating" href="https://www.google.com/maps/search/?api=1&query=Tu+Momento,+Calle+Barcelona+37,+M%C3%B3stoles" target="_blank" rel="noopener"><span class="stars">★★★★★</span><span><strong>4,9</strong> · 445 reseñas en Google</span></a>
   </div>
-  <div class="hero-img"><img src="maps_01.jpg" alt="Sala de espera de Tu Momento en Móstoles" style="object-position:center 35%;"></div>
+  <span class="scroll-hint" aria-hidden="true"></span>
 </section>
 
-<section class="trust">
-  <div class="section-head">
-    <span class="eyebrow">✦ Nuestra filosofía</span>
-    <h2>Hacemos honor <em>a nuestro nombre</em></h2>
-    <p>Te explicamos cada paso y te recomendamos solo lo que te conviene. Irene, Laura y el equipo te atienden con calma, cariño y profesionalidad.</p>
+<!-- 2. BIENVENIDA -->
+<section class="welcome" id="bienvenida">
+  <div class="rv">
+    <h2>Bienvenida a Tu Momento</h2>
+    <p class="sub">“Donde tu historia y tu piel se encuentran”</p>
   </div>
-  <div class="trust-grid">
-    <div class="trust-card"><span class="trust-ic">✦</span><h3>Te escuchamos</h3><p>Hacemos lo que tú necesitas.</p></div>
-    <div class="trust-card"><span class="trust-ic">♥</span><h3>Con cariño</h3><p>Trato cercano y profesional.</p></div>
-    <div class="trust-card"><span class="trust-ic">❖</span><h3>Espacio de calma</h3><p>Limpio, cuidado y tranquilo.</p></div>
-    <div class="trust-card"><span class="trust-ic">★</span><h3>4,9 en Google</h3><p>445 reseñas.</p></div>
-  </div>
+  <figure class="rv"><img src="tm-bienvenida.jpg" alt="Amigas abrazadas y sonriendo en un jardín" loading="lazy"></figure>
 </section>
 
-<section class="worlds">
-  <div class="section-head">
-    <span class="eyebrow">Lo que más nos piden</span>
-    <h2>Elige <em>tu momento</em></h2>
-  </div>
-  <div class="worlds-grid">
-    <a href="servicios.html#rostro" class="world-card"><img src="stock_01.jpg" alt="Faciales"><div class="world-text"><span class="script">Rostro</span><h3>Faciales</h3><p>Limpieza facial oxigenante y más.</p><span class="world-link">Ver faciales →</span></div></a>
-    <a href="servicios.html#cuerpo" class="world-card"><img src="stock_02.jpg" alt="Masajes y corporales"><div class="world-text"><span class="script">Cuerpo</span><h3>Masajes y corporales</h3><p>Relajante, también en cabina para dos.</p><span class="world-link">Ver corporales →</span></div></a>
-    <a href="servicios.html#manos" class="world-card"><img src="maps_08.jpg" alt="Manicura y pedicura"><div class="world-text"><span class="script">Manos</span><h3>Manicura y pedicura</h3><p>Color y diseños a tu gusto.</p><span class="world-link">Ver manos y pies →</span></div></a>
+<!-- 3. NUESTRA HISTORIA -->
+<section class="story soft" style="--img:url('tm-historia.jpg')">
+  <div class="wrap rv">
+    <p><strong>Tu Momento</strong> nació con una misión clara: ser ese refugio donde te sientas escuchada y comprendida. Aquí no creemos en soluciones genéricas. Sabemos que cada rostro y cada cuerpo tienen sus propias necesidades, y por eso hemos diseñado un espacio donde tu bienestar es el único protagonista.</p>
+    <p>Pero no estoy sola. Me acompaña un equipo de profesionales altamente cualificadas, mujeres formadas y comprometidas que comparten mi misma filosofía: <strong>la excelencia en el detalle.</strong></p>
+    <p class="quote">“No se trata solo de cuidar tu piel, se trata de entender tu historia”.</p>
   </div>
 </section>
 
-<section>
-  <div class="section-head">
-    <span class="eyebrow">Lo que ofrecemos</span>
-    <h2>Nuestras categorías</h2>
-    <p>Todo organizado por grupos, para que encuentres lo que buscas en segundos.</p>
-  </div>
-  <div class="cat-pills">
-    <a href="servicios.html#rostro" class="cat-pill">Faciales</a>
-    <a href="servicios.html#cuerpo" class="cat-pill">Cuerpo</a>
-    <a href="servicios.html#manos" class="cat-pill">Manos, pies y más</a>
+<!-- 4. LA ESENCIA DE NUESTRA DIFERENCIA -->
+<section class="essence">
+  <div class="wrap">
+    <div class="rv">
+      <h2>La esencia de nuestra diferencia</h2>
+      <p>Nuestros puntos fuertes son los pilares de tu transformación:</p>
+      <ul>
+        <li><b>Cuidado Facial avanzado:</b> ideal para quienes buscan recuperar la juventud sin perder la naturalidad.</li>
+        <li><b>Remodelación Corporal:</b> un enfoque de precisión para esculpir el cuerpo.</li>
+        <li><b>Bienestar Real:</b> el refugio necesario para desconectar del ruido exterior.</li>
+      </ul>
+    </div>
+    <figure class="rv"><img src="tm-esencia.jpg" alt="Mujer de espaldas envuelta en una toalla, con una flor en el pelo" loading="lazy"></figure>
   </div>
 </section>
 
+<!-- 5. SOLUCIONES, NO MÁQUINAS -->
+<section class="manifest">
+  <div class="wrap">
+    <p class="rv">Aquí no vas a encontrar una lista de máquinas, vas a encontrar soluciones. Porque en Tu Momento, lo más importante eres tú. Y nuestro mayor orgullo es el resultado que tú sientes.</p>
+    <figure class="rv"><img src="tm-velas.jpg" alt="Velas encendidas e incienso en un ambiente tranquilo" loading="lazy"></figure>
+  </div>
+</section>
+
+<!-- 6. KAI ESSENCE -->
+<section class="kai soft" id="kai" style="--img:url('tm-kai.jpg')">
+  <div class="wrap rv">
+    <h2>KAI Essence: la maestría de la precisión</h2>
+    <p class="sub">Una sinergia perfecta entre precisión y sensibilidad.</p>
+    <p>En un sector que ha sustituido el criterio profesional por el uso indiscriminado de máquinas, en Tu Momento reivindicamos el poder de la capacidad técnica.</p>
+    <p>Nuestra metodología no es un protocolo cerrado, es un proceso vivo; una sinergia del cuidado. KAI Essence nace de la convicción de que la verdadera transformación ocurre cuando tratamos el cuerpo y el rostro con la precisión de un ingeniero y la sensibilidad de un artista.</p>
+    <p>Aquí, cada sesión es única. No nos limitamos a aplicar tecnología; la entendemos como una herramienta, pero nuestras manos son el motor del cambio. Utilizamos la maestría manual para despertar la regeneración profunda de tus tejidos, apoyándonos en la biotecnología botánica más avanzada que respeta y potencia tu propia biología.</p>
+    <p class="claim">La diferencia son nuestras manos, nuestro compromiso es tu resultado.</p>
+  </div>
+</section>
+
+<!-- 7. LOS 3 PILARES -->
+<section class="pillars" id="pilares">
+  <div class="head rv"><h2>Los 3 pilares de Tu Momento</h2></div>
+  <div class="grid">
+    <a class="pillar rv" href="#valoracion"><figure><img src="tm-pilar1.jpg" alt="Diagnóstico corporal con guantes" loading="lazy"></figure><h3>Diagnóstico</h3><p>Identificamos el origen para transformar el resultado.</p><span>Saber más</span></a>
+    <a class="pillar rv" href="#botanica"><figure><img src="tm-pilar2.jpg" alt="Flores y plantas secas sobre una bandeja de madera" loading="lazy"></figure><h3>Biotecnología botánica</h3><p>La ciencia que respeta y potencia tu biología.</p><span>Saber más</span></a>
+    <a class="pillar rv" href="#precision"><figure><img src="tm-pilar3.jpg" alt="Muchas manos juntas" loading="lazy"></figure><h3>Precisión manual</h3><p>Donde la tecnología no llega, llegan nuestras manos.</p><span>Saber más</span></a>
+  </div>
+</section>
+
+<!-- 8. VALORACIÓN INTEGRAL -->
+<section class="detail" id="valoracion">
+  <div class="wrap">
+    <figure class="rv"><img src="tm-valoracion.jpg" alt="Mujer mirando con una lupa" loading="lazy" style="object-position:30% center"></figure>
+    <div class="rv">
+      <span class="eyebrow">Pilar 1 · Diagnóstico</span>
+      <h2>Valoración integral</h2>
+      <p class="sub">El arte de escuchar antes de actuar.</p>
+      <p>Todo cambio real, profundo y duradero comienza con una conversación honesta y una escucha activa. En Tu Momento, la valoración no es un simple trámite; es el alma de nuestra metodología KAI Essence.</p>
+      <p>No tratamos pieles de forma genérica, ni aplicamos protocolos estandarizados. Tratamos personas con historias, hábitos y necesidades únicas. Por eso, unimos la precisión de la tecnología avanzada con la sabiduría milenaria de la Ayurveda: leemos tus biotipos (doshas) y analizamos en profundidad tu tejido para identificar el origen real de lo que te preocupa.</p>
+      <p>Entender tu historia biológica y energética es el único camino para diseñar una estrategia a medida, un proceso guiado que garantiza la excelencia y resultados reales, coherentes y sostenibles en el tiempo.</p>
+      <p class="end">Porque cuando comprendemos el origen, transformamos el resultado.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 9. BIOTECNOLOGÍA BOTÁNICA -->
+<section class="detail rev" id="botanica">
+  <div class="wrap">
+    <figure class="rv"><img src="tm-botanica.jpg" alt="Gota de sérum cayendo de un cuentagotas" loading="lazy"></figure>
+    <div class="rv">
+      <span class="eyebrow">Pilar 2</span>
+      <h2>Biotecnología botánica</h2>
+      <p class="sub">La potencia de la ciencia en armonía con tu biología.</p>
+      <p>Creemos firmemente en una belleza que respeta el equilibrio natural de tu cuerpo. Por eso, hemos seleccionado activos de alta pureza y vanguardia científica que actúan en perfecta sinergia contigo.</p>
+      <p>Nuestra biotecnología no es invasiva; es inteligente. Utilizamos fórmulas de alta asimilación que penetran en las capas más profundas para despertar la regeneración celular desde el interior. El resultado es una transformación visible y potente, pero siempre saludable y respetuosa con tu propia naturaleza.</p>
+      <p class="end">Ciencia y botánica unidas para una belleza real y consciente.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 10. PRECISIÓN MANUAL -->
+<section class="detail" id="precision">
+  <div class="wrap">
+    <figure class="rv"><img src="tm-precision.jpg" alt="Manos de la terapeuta trabajando sobre el abdomen" loading="lazy"></figure>
+    <div class="rv">
+      <span class="eyebrow">Pilar 3</span>
+      <h2>Precisión manual</h2>
+      <p class="sub">Donde la tecnología no llega, llegan nuestras manos.</p>
+      <p>Reivindicamos el valor de la técnica manual como la herramienta más sofisticada y precisa que existe. En Tu Momento, entendemos que el motor real del cambio no es un dispositivo, sino la maestría de quien lo dirige.</p>
+      <p>Cada sesión es única. A través de movimientos expertos, rítmicos y conscientes, nuestras manos esculpen la silueta, drenan los tejidos y liberan las tensiones profundas que bloquean tu belleza.</p>
+      <p>Es aquí, en el contacto directo, donde la ciencia se convierte en arte para garantizar resultados que no solo son visibles, sino que permanecen en el tiempo.</p>
+      <p class="end">Nuestra diferencia son nuestras manos. Nuestro compromiso es tu resultado.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 11. SERVICIOS -->
+<section class="services" id="servicios">
+  <div class="rv">
+    <span class="eyebrow">Lo que hacemos</span>
+    <h2>Nuestros servicios</h2>
+    <p class="lead">Cada tratamiento empieza con tu valoración. Escríbenos y te contamos cuál es el tuyo.</p>
+  </div>
+  <div class="svc-grid">
+    <div class="svc rv"><i aria-hidden="true">✿</i><h3>Faciales</h3><p>Cuidado facial avanzado para recuperar la juventud sin perder la naturalidad.</p><a href="https://wa.me/34692829615?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20tratamientos%20faciales" target="_blank" rel="noopener">Pedir información</a></div>
+    <div class="svc rv"><i aria-hidden="true">❦</i><h3>Corporales</h3><p>Remodelación corporal: un enfoque de precisión para esculpir el cuerpo.</p><a href="https://wa.me/34692829615?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20tratamientos%20corporales" target="_blank" rel="noopener">Pedir información</a></div>
+    <div class="svc rv"><i aria-hidden="true">❀</i><h3>Masajes</h3><p>Bienestar real: el refugio para desconectar del ruido exterior. También en cabina para dos.</p><a href="https://wa.me/34692829615?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20masajes" target="_blank" rel="noopener">Pedir información</a></div>
+    <div class="svc rv"><i aria-hidden="true">✺</i><h3>Láser</h3><p>Pregúntanos y te explicamos qué tratamiento encaja contigo.</p><a href="https://wa.me/34692829615?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20l%C3%A1ser" target="_blank" rel="noopener">Pedir información</a></div>
+    <div class="svc rv"><i aria-hidden="true">✧</i><h3>Ayurveda</h3><p>Leemos tus biotipos (doshas) para entender el origen real de lo que te preocupa.</p><a href="https://wa.me/34692829615?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Ayurveda" target="_blank" rel="noopener">Pedir información</a></div>
+  </div>
+</section>
+
+<!-- 12. NUESTRO ESPACIO (fotos reales) -->
 <section class="gallery-wrap" id="galeria">
-  <div class="section-head">
+  <div class="section-head rv">
     <span class="eyebrow">Nuestro espacio</span>
-    <h2>Tu Momento <em>por dentro</em></h2>
-    <p>Así es nuestro centro de la calle Barcelona.</p>
+    <h2>Tu Momento por dentro</h2>
+    <p>Así es nuestro centro de la calle Barcelona, en Móstoles.</p>
   </div>
   <div class="gallery">
     <figure class="big"><img src="maps_07.jpg" alt="Rincón de Tu Momento" loading="lazy"></figure>
     <figure><img src="maps_01.jpg" alt="Sala de espera" loading="lazy"></figure>
     <figure><img src="maps_04.jpg" alt="Recepción con luz natural" loading="lazy"></figure>
-    <figure><img src="maps_08.jpg" alt="Manicura con diseños" loading="lazy"></figure>
     <figure><img src="maps_10.jpg" alt="Detalle del centro" loading="lazy"></figure>
     <figure><img src="maps_03.jpg" alt="Productos en recepción" loading="lazy"></figure>
-    <figure><img src="maps_02.jpg" alt="Cosmética que usamos" loading="lazy"></figure>
-    <figure><img src="maps_09.jpg" alt="Nuestra fachada" loading="lazy"></figure>
+    <figure class="wide"><img src="maps_02.jpg" alt="Cosmética que usamos" loading="lazy"></figure>
+    <figure class="wide"><img src="maps_09.jpg" alt="Nuestra fachada" loading="lazy"></figure>
   </div>
-  <div class="brands"><span>Masajes</span><span>Faciales</span><span>Corporales</span><span>Depilación</span><span>Aparatología</span><span>Nutrición</span><span>Manicura</span><span>Pedicura</span></div>
 </section>
 
+<!-- 13. OPINIONES -->
 <section class="reviews-wrap" id="opiniones">
-  <div class="section-head">
-    <span class="eyebrow">Reseñas Google</span>
-    <h2>Lo que dicen <em>quienes nos visitan</em></h2>
+  <div class="section-head rv">
+    <span class="eyebrow">Reseñas de Google</span>
+    <h2>Lo que dicen de nosotras</h2>
     <p>4,9 de 5 estrellas · 445 reseñas</p>
   </div>
   <div class="review-grid">
-    <div class="review-card"><div class="stars">★★★★★</div><p>"Me realicé una limpieza facial oxigenante y fue todo un acierto. Salí con la piel luminosa, limpia y súper relajada. ¡Gracias por hacer honor a vuestro nombre!"</p><cite>Gema M.</cite></div>
-    <div class="review-card"><div class="stars">★★★★★</div><p>"Hoy he ido a hacerme un tratamiento Detox corporal, ha sido una pasada. Irene ha sido un amor, explicándome todo. Y Laura por su franqueza en lo que me conviene hacer."</p><cite>Marta D.</cite></div>
-    <div class="review-card"><div class="stars">★★★★★</div><p>"He venido a darme un masaje relajante en una cabina para dos personas. El sitio está súper limpio, muy bien ambientado y súper tranquilo."</p><cite>María S.</cite></div>
+    <div class="review-card rv"><div class="stars">★★★★★</div><p>“Me realicé una limpieza facial oxigenante y fue todo un acierto. Salí con la piel luminosa, limpia y súper relajada. ¡Gracias por hacer honor a vuestro nombre!”</p><cite>Gema M.</cite></div>
+    <div class="review-card rv"><div class="stars">★★★★★</div><p>“Hoy he ido a hacerme un tratamiento Detox corporal, ha sido una pasada. Irene ha sido un amor, explicándome todo. Y Laura por su franqueza en lo que me conviene hacer.”</p><cite>Marta D.</cite></div>
+    <div class="review-card rv"><div class="stars">★★★★★</div><p>“He venido a darme un masaje relajante en una cabina para dos personas. El sitio está súper limpio, muy bien ambientado y súper tranquilo.”</p><cite>María S.</cite></div>
   </div>
 </section>
 
-<section class="cta-section">
-  <span class="eyebrow">Reserva</span>
-  <h2>¿Cuándo es <em>tu momento?</em></h2>
-  <p>Escríbenos por WhatsApp y te buscamos hueco.</p>
-  <div class="cta-row">
-    <a href="https://wa.me/34692829615?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20me%20gustar%C3%ADa%20pedir%20cita%20en%20Tu%20Momento" class="btn-solid" target="_blank" rel="noopener">Pide tu cita →</a>
-    <a href="https://wa.me/34692829615?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20me%20gustar%C3%ADa%20pedir%20cita%20en%20Tu%20Momento" class="btn-outline" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+<!-- 14. RESERVA -->
+<section class="cta-section soft" style="--img:url('tm-lavanda.jpg')">
+  <span class="veil" aria-hidden="true"></span>
+  <div class="rv">
+    <span class="eyebrow">Tu valoración</span>
+    <h2>¿Cuándo es tu momento?</h2>
+    <p>Todo empieza con una conversación. Escríbenos y te buscamos hueco.</p>
+    <a href="https://wa.me/34692829615?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20me%20gustar%C3%ADa%20pedir%20una%20valoraci%C3%B3n%20en%20Tu%20Momento" class="btn btn-solid" target="_blank" rel="noopener">Pide tu valoración</a>
   </div>
 </section>
 
+<!-- 15. CONTACTO -->
 <section class="contact-section" id="contacto">
-  <div class="section-head">
+  <div class="section-head rv">
     <span class="eyebrow">Visítanos</span>
-    <h2>Dónde y cuándo encontrarnos</h2>
+    <h2>Dónde encontrarnos</h2>
   </div>
   <div class="contact-grid">
-    <div class="contact-info">
+    <div class="contact-info rv">
       <div class="contact-block"><h3>Dirección</h3><p>C. Barcelona, 37, posterior 1, planta local 2C2<br>28937 Móstoles, Madrid</p></div>
       <div class="contact-block"><h3>Teléfono / WhatsApp</h3><p><a href="tel:+34692829615">692 82 96 15</a></p></div>
       <div class="contact-block"><h3>Horario</h3><ul class="hours-list"><li><span>Lunes a viernes</span><span>9:00–20:00</span></li><li><span>Sábado y domingo</span><span>Cerrado</span></li></ul></div>
-      
     </div>
-    <div class="contact-map">
+    <div class="contact-map rv">
       <iframe title="Mapa de Tu Momento" src="https://www.google.com/maps?q=Tu+Momento,+Calle+Barcelona+37,+M%C3%B3stoles&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
@@ -135,14 +233,14 @@
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <a href="index.html" class="logo light"><span class="logo-mark">T</span><span class="logo-text"><span class="script">Tu Momento</span><small>belleza y bienestar · Móstoles</small></span></a>
-      <p>Belleza y bienestar en Móstoles.</p>
+      <a href="#inicio" class="logo light"><span class="logo-mark">T</span><span class="logo-text"><span class="script">Tu Momento</span><small>Well Aging · Móstoles</small></span></a>
+      <p>Especialistas en Well Aging, Remodelación Corporal y Bienestar Real.</p>
     </div>
-    <div><h4>Servicios</h4><ul><li><a href="servicios.html#rostro">Faciales</a></li><li><a href="servicios.html#cuerpo">Cuerpo</a></li><li><a href="servicios.html#manos">Manos, pies y más</a></li></ul></div>
-    <div><h4>Contacto</h4><ul><li>📍 C. Barcelona, 37</li><li>28937 Móstoles, Madrid</li><li>📞 <a href="tel:+34692829615">692 82 96 15</a></li></ul></div>
+    <div><h4>Servicios</h4><ul><li><a href="#servicios">Faciales</a></li><li><a href="#servicios">Corporales</a></li><li><a href="#servicios">Masajes</a></li><li><a href="#servicios">Láser</a></li><li><a href="#servicios">Ayurveda</a></li></ul></div>
+    <div><h4>Contacto</h4><ul><li>C. Barcelona, 37</li><li>28937 Móstoles, Madrid</li><li><a href="tel:+34692829615">692 82 96 15</a></li><li>Lunes a viernes, 9:00–20:00</li></ul></div>
   </div>
   <div class="footer-bottom">
-    <span>Propuesta de diseño para Tu Momento - demo, no es el sitio web oficial del negocio.</span>
+    <span>© 2026 Tu Momento · Móstoles</span>
     <span><a href="aviso-legal.html">Aviso Legal</a> &middot; <a href="politica-privacidad.html">Privacidad</a> &middot; <a href="politica-cookies.html">Cookies</a></span>
   </div>
 </footer>
